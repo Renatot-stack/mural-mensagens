@@ -1,5 +1,5 @@
 // Cole aqui a URL /exec do seu Web App do Apps Script.
-const API_URL = "COLE_AQUI_A_URL_DO_APPS_SCRIPT";
+const API_URL = "https://script.google.com/macros/s/AKfycbxaPJEdD5ycvEHy6cA-TTri16uc2zD4tJeISIJG6Fw_Akc20wb2asfM4gLa_qBLA9fq/exec";
 
 const messagesEl = document.querySelector("#messages");
 const form = document.querySelector("#messageForm");
