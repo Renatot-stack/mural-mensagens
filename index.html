@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mural de Mensagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div>
+        <p class="eyebrow">GRUPO</p>
+        <h1>Mural de Mensagens</h1>
+      </div>
+      <button id="refreshButton" class="icon-button" type="button" aria-label="Atualizar mensagens">↻</button>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite">
+      <div class="state">Carregando mensagens...</div>
+    </section>
+
+    <form id="messageForm" class="composer">
+      <div class="identity">
+        <label for="name">Seu nome</label>
+        <input id="name" name="name" maxlength="30" autocomplete="name" placeholder="Renato" required>
+      </div>
+
+      <div class="message-row">
+        <input id="message" name="message" maxlength="500" placeholder="Escreva uma mensagem..." autocomplete="off" required>
+        <button type="submit">Enviar</button>
+      </div>
+      <p id="status" class="status" role="status"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
